@@ -9,12 +9,8 @@ env:
   npm_org: \@utilslib
 
 jobs:
-  pushVersionCode:
+  test:
     runs-on: ubuntu-latest
-
-  trigger:
-    runs-on: ubuntu-latest
-    needs: pushVersionCode
     steps:
       - name: Trigger publish workflow
         run: |
